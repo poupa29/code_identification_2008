@@ -1,0 +1,14 @@
+bin\Debug\KSS-VI.exe
+bin\Debug\KSS-VI.pdb
+bin\Debug\ClassLibraryKSM.dll
+bin\Debug\TrackssComm.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\KSS-VI.exe
+obj\Debug\KSS-VI.pdb
+bin\Release\KSS-VI.exe
+bin\Release\KSS-VI.pdb
+bin\Release\ClassLibraryKSM.dll
+bin\Release\TrackssComm.dll
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\KSS-VI.exe
+obj\Release\KSS-VI.pdb

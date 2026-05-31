@@ -1,0 +1,27 @@
+- Feu :
+	Module du feu. Emmission d'un entier coder qui contient l'etat du feu + le temps de passage + ID
+	(Compatible KSM)
+
+- FeuControl :
+	Module du feu avec un message de controle pour passer le feu au vert.
+	(Non Compatible KSM)
+
+- Panneau :
+	Module du panneau. Emmission d'un entier qui identifie le panneau.
+	(Compatible KSM)
+
+- PanneauTelosb :
+	Module Meteo. Emmision de 5 entiers : consigne de vitesse --> code meteo --> Humidity --> Temp --> TSR --> Id mote
+	(Non Compatible KSM)
+
+- Simu_trafic :
+	Simule du trafic routier pour tester TraficSign. Emmission de Msg_vehicule aleatoire.
+	(Non Compatible KSM)
+
+- TOS_Base :
+	Module de base permettant les communications series avec le PC.
+
+- TraficSign :
+	Module de Trafic. Le module enregistre les Msg_vehicule recu dans la memoire interne et emet le log lors de la 
+	reception de message de controle. Ce module peut integrer le module du feu ou du panneau.
+	(Non Compatible KSM)

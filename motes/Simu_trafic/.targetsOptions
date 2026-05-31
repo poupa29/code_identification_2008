@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<buildTargets>
+<target loop="false" name="Reinstall - Fin limite 50 (ID : 9)" nostdinc="false" path="" time="3.0">
+<selected>micaz</selected>
+<default>false</default>
+<boards>
+<board>basicsb</board>
+</boards>
+<extras>
+<extra name="mib510">
+<param>
+<name>&lt;dev&gt;</name>
+<value>/dev/ttyS2</value>
+<abc>false</abc>
+</param>
+</extra>
+<extra name="reinstall">
+<param>
+<name>Mote Id</name>
+<value>9</value>
+<abc>false</abc>
+</param>
+</extra>
+</extras>
+</target>
+<target loop="false" name="Reinstall - Danger (ID : 7)" nostdinc="false" path="" time="2.0">
+<selected>micaz</selected>
+<default>false</default>
+<boards>
+<board>basicsb</board>
+</boards>
+<extras>
+<extra name="mib510">
+<param>
+<name>&lt;dev&gt;</name>
+<value>/dev/ttyS2</value>
+<abc>false</abc>
+</param>
+</extra>
+<extra name="reinstall">
+<param>
+<name>Mote Id</name>
+<value>7</value>
+<abc>false</abc>
+</param>
+</extra>
+</extras>
+</target>
+<target loop="false" name="Reinstall - Limite 50 (ID : 1)" nostdinc="false" path="" time="2.0">
+<selected>micaz</selected>
+<default>false</default>
+<boards>
+<board>basicsb</board>
+</boards>
+<extras>
+<extra name="mib510">
+<param>
+<name>&lt;dev&gt;</name>
+<value>/dev/ttyS2</value>
+<abc>false</abc>
+</param>
+</extra>
+<extra name="reinstall">
+<param>
+<name>Mote Id</name>
+<value>1</value>
+<abc>false</abc>
+</param>
+</extra>
+</extras>
+</target>
+<target loop="false" name="Compilation" nostdinc="false" path="" time="2.0">
+<selected>micaz</selected>
+<default>true</default>
+</target>
+</buildTargets>

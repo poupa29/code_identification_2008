@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<buildTargets>
+<target loop="false" name="Target micaz" nostdinc="false" path="" time="3.0">
+<selected>micaz</selected>
+<default>true</default>
+<extras>
+<extra name="mib510">
+<param>
+<name>&lt;dev&gt;</name>
+<value>/dev/ttyS5</value>
+<abc>false</abc>
+</param>
+</extra>
+<extra name="install">
+<param>
+<name>Mote Id</name>
+<value>7</value>
+<abc>false</abc>
+</param>
+</extra>
+<extra name="docs"/>
+</extras>
+</target>
+<target loop="false" name="Testcompil" nostdinc="false" path="" time="2.0">
+<selected>micaz</selected>
+<default>false</default>
+<boards/>
+</target>
+</buildTargets>

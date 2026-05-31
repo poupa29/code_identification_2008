@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<RT-MAPSDiagram>
+    <RegisteredPackages>
+        <File>C:\Program Files\Intempora\Win32\Packages\MSdkRRM_Raw2.pck</File>
+        <File>C:\Program Files\Intempora\Win32Debug\Packages\MSdkLivicGeneral.pck</File>
+        <File>C:\Program Files\Intempora\Win32Debug\Packages\MSdkLivicSuivi.pck</File>
+        <File>C:\Program Files\Intempora\Win32Debug\Packages\MSdkMatrox601.pck</File>
+        <File>C:\Program Files\Intempora\Win32Debug\Packages\MSdkLivicIdentification.pck</File>
+    </RegisteredPackages>
+    <View ID="JavaStudio1.0">
+        <ComponentBox InstanceName="LivicDecodageInfrarouge_3">
+            <X>237.0</X>
+            <Y>330.0</Y>
+        </ComponentBox>
+        <ComponentBox InstanceName="ImageS">
+            <X>438.0</X>
+            <Y>341.0</Y>
+        </ComponentBox>
+        <ComponentBox InstanceName="ImageR">
+            <X>438.0</X>
+            <Y>439.0</Y>
+        </ComponentBox>
+        <ComponentBox InstanceName="Image">
+            <X>289.0</X>
+            <Y>151.0</Y>
+        </ComponentBox>
+        <ComponentBox InstanceName="Matrox_6">
+            <X>30.0</X>
+            <Y>322.0</Y>
+        </ComponentBox>
+        <ComponentBox InstanceName="LivicConversion1vers3_7">
+            <X>108.0</X>
+            <Y>324.0</Y>
+        </ComponentBox>
+    </View>
+    <Component InstanceName="LivicDecodageInfrarouge_3">
+        <Model>LivicDecodageInfrarouge</Model>
+        <Input Name="iImage" LongName="LivicDecodageInfrarouge_3.iImage">
+            <Properties>
+                <Property LongName="LivicDecodageInfrarouge_3.iImage.neverskipping">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+                <Property LongName="LivicDecodageInfrarouge_3.iImage.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+            </Properties>
+        </Input>
+        <Output Name="oImageS" LongName="LivicDecodageInfrarouge_3.oImageS">
+            <Properties>
+                <Property LongName="LivicDecodageInfrarouge_3.oImageS.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+                <Property LongName="LivicDecodageInfrarouge_3.oImageS.periodic">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+            </Properties>
+        </Output>
+        <Output Name="oImageR" LongName="LivicDecodageInfrarouge_3.oImageR">
+            <Properties>
+                <Property LongName="LivicDecodageInfrarouge_3.oImageR.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+                <Property LongName="LivicDecodageInfrarouge_3.oImageR.periodic">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+            </Properties>
+        </Output>
+        <Output Name="oCibles" LongName="LivicDecodageInfrarouge_3.oCibles">
+            <Properties>
+                <Property LongName="LivicDecodageInfrarouge_3.oCibles.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+                <Property LongName="LivicDecodageInfrarouge_3.oCibles.periodic">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+            </Properties>
+        </Output>
+        <Property LongName="LivicDecodageInfrarouge_3.pSeuil">
+            <Type>1</Type>
+            <Value>128</Value>
+        </Property>
+        <Property LongName="LivicDecodageInfrarouge_3.pTailleDilatation">
+            <Type>1</Type>
+            <Value>5</Value>
+        </Property>
+        <Property LongName="LivicDecodageInfrarouge_3.pFrequence">
+            <Type>2</Type>
+            <Value>4.1</Value>
+        </Property>
+        <Property LongName="LivicDecodageInfrarouge_3.pVoisinage">
+            <Type>1</Type>
+            <Value>10</Value>
+        </Property>
+        <Property LongName="LivicDecodageInfrarouge_3.pEchelleAffichageVitesse">
+            <Type>2</Type>
+            <Value>10.0</Value>
+        </Property>
+        <Property LongName="LivicDecodageInfrarouge_3.pEchelleAffichageAcceleration">
+            <Type>2</Type>
+            <Value>10.0</Value>
+        </Property>
+        <Property LongName="LivicDecodageInfrarouge_3.priority">
+            <Type>1</Type>
+            <Value>128</Value>
+        </Property>
+    </Component>
+    <Component InstanceName="ImageS">
+        <Model>ImageViewer</Model>
+        <Input Name="input" LongName="ImageS.input">
+            <Properties>
+                <Property LongName="ImageS.input.neverskipping">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+                <Property LongName="ImageS.input.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+            </Properties>
+        </Input>
+        <Output Name="oMouseClick" LongName="ImageS.oMouseClick">
+            <Properties>
+                <Property LongName="ImageS.oMouseClick.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+                <Property LongName="ImageS.oMouseClick.periodic">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+            </Properties>
+        </Output>
+        <Output Name="oROI" LongName="ImageS.oROI">
+            <Properties>
+                <Property LongName="ImageS.oROI.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+                <Property LongName="ImageS.oROI.periodic">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+            </Properties>
+        </Output>
+        <Property LongName="ImageS.left">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="ImageS.top">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="ImageS.width">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="ImageS.height">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="ImageS.subsampling">
+            <Type>1</Type>
+            <Value>1</Value>
+        </Property>
+        <Property LongName="ImageS.objectsReference">
+            <Type>3</Type>
+            <Value>1.0;0;0;1.0;0;0</Value>
+        </Property>
+        <Property LongName="ImageS.pCropImageROI">
+            <Type>0</Type>
+            <Value>true</Value>
+        </Property>
+        <Property LongName="ImageS.pTimestampsDisplay">
+            <Type>0</Type>
+            <Value>false</Value>
+        </Property>
+        <Property LongName="ImageS.pAutoResize">
+            <Type>0</Type>
+            <Value>true</Value>
+        </Property>
+        <Property LongName="ImageS.pReminescence">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="ImageS.pLastOrNextReader">
+            <Type>0</Type>
+            <Value>true</Value>
+        </Property>
+        <Property LongName="ImageS.priority">
+            <Type>1</Type>
+            <Value>128</Value>
+        </Property>
+    </Component>
+    <Connection>
+        <Output>LivicDecodageInfrarouge_3.oImageS</Output>
+        <Input>ImageS.input</Input>
+    </Connection>
+    <Component InstanceName="ImageR">
+        <Model>ImageViewer</Model>
+        <Input Name="input" LongName="ImageR.input">
+            <Properties>
+                <Property LongName="ImageR.input.neverskipping">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+                <Property LongName="ImageR.input.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+            </Properties>
+        </Input>
+        <Output Name="oMouseClick" LongName="ImageR.oMouseClick">
+            <Properties>
+                <Property LongName="ImageR.oMouseClick.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+                <Property LongName="ImageR.oMouseClick.periodic">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+            </Properties>
+        </Output>
+        <Output Name="oROI" LongName="ImageR.oROI">
+            <Properties>
+                <Property LongName="ImageR.oROI.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+                <Property LongName="ImageR.oROI.periodic">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+            </Properties>
+        </Output>
+        <Property LongName="ImageR.left">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="ImageR.top">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="ImageR.width">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="ImageR.height">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="ImageR.subsampling">
+            <Type>1</Type>
+            <Value>1</Value>
+        </Property>
+        <Property LongName="ImageR.objectsReference">
+            <Type>3</Type>
+            <Value>1.0;0;0;1.0;0;0</Value>
+        </Property>
+        <Property LongName="ImageR.pCropImageROI">
+            <Type>0</Type>
+            <Value>true</Value>
+        </Property>
+        <Property LongName="ImageR.pTimestampsDisplay">
+            <Type>0</Type>
+            <Value>false</Value>
+        </Property>
+        <Property LongName="ImageR.pAutoResize">
+            <Type>0</Type>
+            <Value>true</Value>
+        </Property>
+        <Property LongName="ImageR.pReminescence">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="ImageR.pLastOrNextReader">
+            <Type>0</Type>
+            <Value>true</Value>
+        </Property>
+        <Property LongName="ImageR.priority">
+            <Type>1</Type>
+            <Value>128</Value>
+        </Property>
+    </Component>
+    <Connection>
+        <Output>LivicDecodageInfrarouge_3.oImageR</Output>
+        <Input>ImageR.input</Input>
+    </Connection>
+    <Component InstanceName="Image">
+        <Model>ImageViewer</Model>
+        <Input Name="input" LongName="Image.input">
+            <Properties>
+                <Property LongName="Image.input.neverskipping">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+                <Property LongName="Image.input.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+            </Properties>
+        </Input>
+        <Output Name="oMouseClick" LongName="Image.oMouseClick">
+            <Properties>
+                <Property LongName="Image.oMouseClick.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+                <Property LongName="Image.oMouseClick.periodic">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+            </Properties>
+        </Output>
+        <Output Name="oROI" LongName="Image.oROI">
+            <Properties>
+                <Property LongName="Image.oROI.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+                <Property LongName="Image.oROI.periodic">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+            </Properties>
+        </Output>
+        <Property LongName="Image.left">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="Image.top">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="Image.width">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="Image.height">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="Image.subsampling">
+            <Type>1</Type>
+            <Value>1</Value>
+        </Property>
+        <Property LongName="Image.objectsReference">
+            <Type>3</Type>
+            <Value>1.0;0;0;1.0;0;0</Value>
+        </Property>
+        <Property LongName="Image.pCropImageROI">
+            <Type>0</Type>
+            <Value>true</Value>
+        </Property>
+        <Property LongName="Image.pTimestampsDisplay">
+            <Type>0</Type>
+            <Value>false</Value>
+        </Property>
+        <Property LongName="Image.pAutoResize">
+            <Type>0</Type>
+            <Value>true</Value>
+        </Property>
+        <Property LongName="Image.pReminescence">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="Image.pLastOrNextReader">
+            <Type>0</Type>
+            <Value>true</Value>
+        </Property>
+        <Property LongName="Image.priority">
+            <Type>1</Type>
+            <Value>128</Value>
+        </Property>
+    </Component>
+    <Component InstanceName="Matrox_6">
+        <Model>Matrox</Model>
+        <Output Name="output" LongName="Matrox_6.output">
+            <Properties>
+                <Property LongName="Matrox_6.output.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+                <Property LongName="Matrox_6.output.periodic">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+            </Properties>
+        </Output>
+        <Property LongName="Matrox_6.frameGrabber">
+            <Type>3</Type>
+            <Value>meteor2mc</Value>
+        </Property>
+        <Property LongName="Matrox_6.device">
+            <Type>1</Type>
+            <Value>1</Value>
+        </Property>
+        <Property LongName="Matrox_6.camera">
+            <Type>3</Type>
+            <Value>i2s8503p</Value>
+        </Property>
+        <Property LongName="Matrox_6.useMJPEGModule">
+            <Type>0</Type>
+            <Value>false</Value>
+        </Property>
+        <Property LongName="Matrox_6.quality">
+            <Type>1</Type>
+            <Value>50</Value>
+        </Property>
+        <Property LongName="Matrox_6.YUV">
+            <Type>0</Type>
+            <Value>false</Value>
+        </Property>
+        <Property LongName="Matrox_6.channel">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="Matrox_6.switching">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="Matrox_6.subsampling">
+            <Type>1</Type>
+            <Value>2</Value>
+        </Property>
+        <Property LongName="Matrox_6.VCRInput">
+            <Type>0</Type>
+            <Value>false</Value>
+        </Property>
+        <Property LongName="Matrox_6.fields">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="Matrox_6.width">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="Matrox_6.height">
+            <Type>1</Type>
+            <Value>0</Value>
+        </Property>
+        <Property LongName="Matrox_6.planar">
+            <Type>0</Type>
+            <Value>false</Value>
+        </Property>
+        <Property LongName="Matrox_6.demux">
+            <Type>0</Type>
+            <Value>false</Value>
+        </Property>
+        <Property LongName="Matrox_6.reverseX">
+            <Type>0</Type>
+            <Value>false</Value>
+        </Property>
+        <Property LongName="Matrox_6.reverseY">
+            <Type>0</Type>
+            <Value>false</Value>
+        </Property>
+        <Property LongName="Matrox_6.softReverse">
+            <Type>0</Type>
+            <Value>false</Value>
+        </Property>
+        <Property LongName="Matrox_6.displayErrors">
+            <Type>0</Type>
+            <Value>true</Value>
+        </Property>
+        <Property LongName="Matrox_6.GainLivic">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.ExposureTimeLivic">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.ExposureTimeDelayLivic">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.SourceSizeXLivic">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.SourceSizeYLivic">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.SourceOffsetXLivic">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.SourceOffsetYLivic">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.hue">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.inputGain">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.brightness">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.saturation">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.shutter">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.gain">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.autoExposure">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.sharpness">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.iris">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.whiteBalance">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.whiteBalanceU">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.whiteBalanceV">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.zoom">
+            <Type>1</Type>
+            <Value>-1</Value>
+        </Property>
+        <Property LongName="Matrox_6.priority">
+            <Type>1</Type>
+            <Value>128</Value>
+        </Property>
+    </Component>
+    <Component InstanceName="LivicConversion1vers3_7">
+        <Model>LivicConversion1vers3</Model>
+        <Input Name="iImage" LongName="LivicConversion1vers3_7.iImage">
+            <Properties>
+                <Property LongName="LivicConversion1vers3_7.iImage.neverskipping">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+                <Property LongName="LivicConversion1vers3_7.iImage.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+            </Properties>
+        </Input>
+        <Output Name="oImageR" LongName="LivicConversion1vers3_7.oImageR">
+            <Properties>
+                <Property LongName="LivicConversion1vers3_7.oImageR.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+                <Property LongName="LivicConversion1vers3_7.oImageR.periodic">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+            </Properties>
+        </Output>
+        <Output Name="oImageG" LongName="LivicConversion1vers3_7.oImageG">
+            <Properties>
+                <Property LongName="LivicConversion1vers3_7.oImageG.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+                <Property LongName="LivicConversion1vers3_7.oImageG.periodic">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+            </Properties>
+        </Output>
+        <Output Name="oImageB" LongName="LivicConversion1vers3_7.oImageB">
+            <Properties>
+                <Property LongName="LivicConversion1vers3_7.oImageB.subsampling">
+                    <Value>1</Value>
+                    <Type>1</Type>
+                </Property>
+                <Property LongName="LivicConversion1vers3_7.oImageB.periodic">
+                    <Value>false</Value>
+                    <Type>0</Type>
+                </Property>
+            </Properties>
+        </Output>
+        <Property LongName="LivicConversion1vers3_7.Resize">
+            <Type>1</Type>
+            <Value>1</Value>
+        </Property>
+        <Property LongName="LivicConversion1vers3_7.rgbOUPlanRPlanGPlanB">
+            <Type>0</Type>
+            <Value>true</Value>
+        </Property>
+        <Property LongName="LivicConversion1vers3_7.threaded">
+            <Type>0</Type>
+            <Value>true</Value>
+        </Property>
+        <Property LongName="LivicConversion1vers3_7.priority">
+            <Type>1</Type>
+            <Value>128</Value>
+        </Property>
+    </Component>
+    <Connection>
+        <Output>Matrox_6.output</Output>
+        <Input>LivicConversion1vers3_7.iImage</Input>
+    </Connection>
+    <KernelProperties>
+        <Property LongName="Kernel.timestampingPrecision">
+            <Value>1</Value>
+            <Type>1</Type>
+        </Property>
+        <Property LongName="Kernel.startTimespeed">
+            <Value>100</Value>
+            <Type>1</Type>
+        </Property>
+        <Property LongName="Kernel.startTime">
+            <Value>0:00:00.000</Value>
+            <Type>1</Type>
+        </Property>
+        <Property LongName="Kernel.session">
+            <Value>unspecified</Value>
+            <Type>3</Type>
+        </Property>
+        <Property LongName="Kernel.path">
+            <Value />
+            <Type>3</Type>
+        </Property>
+        <Property LongName="Kernel.recording">
+            <Value>false</Value>
+            <Type>0</Type>
+        </Property>
+        <Property LongName="Kernel.realtime">
+            <Value>true</Value>
+            <Type>0</Type>
+        </Property>
+        <Property LongName="Kernel.COMAutoExit">
+            <Value>true</Value>
+            <Type>0</Type>
+        </Property>
+        <Property LongName="Kernel.sequentialStart">
+            <Value>false</Value>
+            <Type>0</Type>
+        </Property>
+        <Property LongName="Kernel.usePerformanceCounter">
+            <Value>true</Value>
+            <Type>0</Type>
+        </Property>
+    </KernelProperties>
+    <StudioProperties>
+        <Property LongName="Studio.AutosaveRate">
+            <Value>5</Value>
+            <Type>1</Type>
+        </Property>
+        <Property LongName="StudioConsole.neverSkipMessages">
+            <Value>false</Value>
+            <Type>0</Type>
+        </Property>
+        <Property LongName="StudioConsole.verboseLevel">
+            <Value>3</Value>
+            <Type>1</Type>
+        </Property>
+    </StudioProperties>
+    <Connection>
+        <Output>LivicConversion1vers3_7.oImageG</Output>
+        <Input>Image.input</Input>
+    </Connection>
+    <Connection>
+        <Output>LivicConversion1vers3_7.oImageG</Output>
+        <Input>LivicDecodageInfrarouge_3.iImage</Input>
+    </Connection>
+</RT-MAPSDiagram>
+

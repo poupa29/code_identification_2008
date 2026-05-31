@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<buildTargets>
+<target loop="false" name="Target telosb" nostdinc="false" path="" time="3.0">
+<selected>telosb</selected>
+<default>true</default>
+<boards>
+<board>none</board>
+</boards>
+<extras>
+<extra name="install">
+<param>
+<name>Mote Id</name>
+<value>7</value>
+<abc>false</abc>
+</param>
+</extra>
+</extras>
+</target>
+</buildTargets>
